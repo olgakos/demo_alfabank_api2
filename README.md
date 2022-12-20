@@ -4,6 +4,10 @@ API тесты для публичных сервисов Alfabank
 <img title="Logo" width="120" src="images/Alfa-Bank.png" alt="Logo Alfa Bank" width="600">
 </p>
 
+## :watermelon: Jenkins. Удаленный запуск тестов (онлайн)  
+https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/
+
+
 ## Демо-проект по автоматизации тестирования API: alfabank.by
 :earth_americas: <a target="_blank" href="https://developerhub.alfabank.by/developerhub/site/pages/item-info.jag?name=partner.public&version=1.0.1&provider=admin&tab=doc">https://developerhub.alfabank.by</a>
 <br>Публичный сервис позволяет получать:
@@ -58,4 +62,6 @@ API тесты для публичных сервисов Alfabank
 ['address'] == прочерк
 ```
 ------
-ver2 2022-12-20
+2022-12-20 
+<br>done: main
+<br>todo: настроить Дженкинс. 
