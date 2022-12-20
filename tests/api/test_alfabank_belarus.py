@@ -14,7 +14,7 @@ now_time = f"{now:{time_format}}"
 
 @tag('API')
 @title("Display exchange rates of the National Bank of the Republic of Belarus")
-def test_display_bank_all_exchange_rates_rb():
+def test_display_rb():
     response = alfabank().get(f'/public/nationalRates',
                               params={'currencyCode': '840, 978'}
                               )
