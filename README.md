@@ -4,8 +4,12 @@ API тесты для публичных сервисов Alfabank
 <img title="Logo" width="120" src="images/Alfa-Bank.png" alt="Logo Alfa Bank" width="600">
 </p>
 
+
 ## :watermelon: Jenkins. Удаленный запуск тестов (онлайн)  
 https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/
+
+
+
 
 
 ## Демо-проект по автоматизации тестирования API: alfabank.by
@@ -61,6 +65,26 @@ https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/
 ['name'] == "ЗАО 'АЛЬФА-БАНК', Г.МИНСК, РБ"
 ['address'] == прочерк
 ```
+
+## :bellhop_bell: Allure отчет
+###### Главный экран отчета (Owerwiev)
+<p align="center">
+<img title="Allure Graphics" src="images/Allure1.jpg" alt="Allure Graphics" width="600">
+</p>
+
+###### Страница с проведенными тестами (Suites)
+<p align="center">
+<img title="Allure Graphics" src="images/Allure2.jpg" alt="Allure Graphics" width="600">
+</p>
+
+
+Команда получения Аллюр-отчета из терминала:
+```
+(venv) D:\***\demo_alfabank_api2>allure\bin\allure.bat serve allure-results --clean-alluredir
+Example:
+(venv) D:\PythonParty\demo_alfabank_api2>allure\bin\allure.bat serve allure-results --clean-alluredir`
+```
+
 ------
 2022-12-20 
 <br>done: main

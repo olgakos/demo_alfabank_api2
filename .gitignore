@@ -6,6 +6,16 @@
 .idea/
 *.iml
 
+# Allure to my!
+allure-results/
+allure-report/
+.allure-results/
+.allure-report/
+.tests/allure-results
+allure/plugins
+/allure/
+
+
 # Idea
 .idea
 *.im;
