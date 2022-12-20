@@ -84,8 +84,24 @@ https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/
 Example:
 (venv) D:\PythonParty\demo_alfabank_api2>allure\bin\allure.bat serve allure-results --clean-alluredir`
 ```
+Ссылка получения последнего успешно собранного Аллюр-отчета при удаленном запуске в Дженкинс:
+```
+https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/4/allure/#suites
+
+```
+
+## :watermelon: Jenkins. Удаленный запуск тестов (онлайн) 
+Этот способ не требует установки программ на компьютер пользователя! Работает "как есть" онлайн.
+
+Способ 1. Быстрый вариант, только просмотр:
+1. <i>Не зарегистрированным</i> пользователем перейти на страницу сборки проекта по ссылке: 
+<a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/">Jenkins project</a>
+2. Слева внизу кликнуть на желтую иконку "Allure Report" и ознакомиться в графическим отчетом о результатах последнего запуска тестов.  
+<p align="center">
+<img title="Allure Graphics" src="images/Jenkins1.jpg" alt="Jenkins Button" width="600">
+</p>
 
 ------
 2022-12-20 
-<br>done: main + работающий Аллюр
-<br>todo: настроить Дженкинс. 
+<br>done: main + работающий Аллюр + Дженкинс
+<br>todo: Редми улучшить
