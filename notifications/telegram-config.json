@@ -1,0 +1,16 @@
+{
+  "base": {
+    "project": "some project: wone-it.ru tests",
+    "environment": "some env: / PROD",
+    "comment": "some comment / local",
+    "reportLink": "",
+    "language": "en",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "5651442214:AAEJQaCfdxthTEGc2Dd1UlE451cZKtxVjBQ",
+    "chat": "-1001887535531",
+    "replyTo": ""
+  }
+}
