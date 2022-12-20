@@ -1,7 +1,7 @@
 {
   "base": {
-    "project": "some project: wone-it.ru tests",
-    "environment": "some env: / PROD",
+    "project": "some project / API tests",
+    "environment": "some env / PROD",
     "comment": "some comment / local",
     "reportLink": "",
     "language": "en",
