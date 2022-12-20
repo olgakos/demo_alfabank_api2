@@ -69,7 +69,7 @@ RESPONSE
   ]
 }
 '''
-
+'''
 exchange_rates_banks = Schema(
     {
         "totalRowCount": int,
@@ -81,7 +81,19 @@ exchange_rates_banks = Schema(
             }
         ]
     }
-#,
-    #required=True,
-    #extra=PREVENT_EXTRA
+)
+'''
+
+
+code_banks = Schema(
+    {
+        "totalRowCount": int,
+        "banks": [
+            {
+                "bic": str,
+                "name": str,
+                "address": str
+            }
+        ]
+    }
 )
