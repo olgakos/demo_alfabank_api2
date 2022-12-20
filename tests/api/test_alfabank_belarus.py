@@ -23,13 +23,11 @@ def test_display_rb():
     assert S(exchange_rates_belarus) == response.json()
     # первый вложенный список
     assert response.json()["rates"][0]["date"] == now_time
-    #assert response.json()['rates'][0]['rate'] == 2.6376 #dinamic! For example: Expected:2.6376  Actual:2.6728
     assert response.json()['rates'][0]['iso'] == "EUR"
     assert response.json()['rates'][0]['code'] == 978
     assert response.json()['rates'][0]['name'] == "евро"
     # второй вложенный список
     assert response.json()["rates"][1]["date"] == now_time
-    #assert response.json()['rates'][1]['rate'] == 2.5022 #dinamic! For example: Expected:2.5022 Actual:2.5061
     assert response.json()['rates'][1]['iso'] == "USD"
     assert response.json()['rates'][1]['code'] == 840
     assert response.json()['rates'][1]['name'] == "доллар США"
