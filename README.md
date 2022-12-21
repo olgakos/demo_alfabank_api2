@@ -13,11 +13,12 @@
 ## :four_leaf_clover: Languages and Tools:
 <code><img src="images/logo/python.svg" width="40" height="40"  alt="olgakos" title="Python"></code>
 <code><img src="images/logo/pycharm.png" width="40" height="40"  alt="olgakos" title="PyCharm"></code>
-<code><img src="images/logo/browserstack.png" width="40" height="40"  alt="olgakos" title="BrowserStack"></code>
+<code><img src="images/logo/request.png" width="40" height="40"  alt="olgakos" title="Request"></code>
+<code><img src="images/logo/RestAssured.svg" width="40" height="40"  alt="olgakos" title="Rest-Assured"></code>
 <code><img src="images/logo/pytest.png" width="40" height="40"  alt="olgakos" title="PyTest"></code>
 <code><img src="images/logo/selene.png" width="40" height="40"  alt="olgakos" title="Selene"></code>
 <code><img src="images/logo/Jenkins.svg" width="40" height="40"  alt="olgakos" title="Jenkins"></code>
-<code><img src="images/logo/Allure.svg" width="40" height="40"  alt="olgakos" title="Allure Report"></code>
+<code><img src="images/logo/Allure_new.png" width="40" height="40"  alt="olgakos" title="Allure Report"></code>
 <code><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40" alt="Git" title="Git"></code>
 <code><img src="images/logo/GitHub.svg" width="40" height="40"  alt="olgakos" title="Github"></code>
 
@@ -51,7 +52,8 @@
 ['buyCode'] == 643
 ['buyIso'] == 'RUB'
 ['sellIso'] == 'EUR'
-['name'] == None	
+['name'] == None
+```
 </details>
 
 #### Курсы валют Национального банка Республики Беларусь
@@ -60,15 +62,15 @@
 
 <details>
     <summary><i>Details</i></summary>
-	
-```
+
+```	
 ['iso'] == "EUR"
 ['code'] == 978 
 ['name'] == "евро"
 ['iso'] == "USD"
 ['code'] == 840
 ['name'] == "доллар США"
-```	
+```
 </details>
 
 #### Коды банков
@@ -84,7 +86,6 @@
 ['address'] == прочерк
 ```
 </details>
-
 
 ## :watermelon: Jenkins. Удаленный запуск тестов (онлайн) 
 Не требует установки программ на компьютер пользователя! Работает "как есть" онлайн.
