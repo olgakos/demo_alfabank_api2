@@ -1,4 +1,6 @@
 import requests
+from allure_commons._allure import step
+
 from schemas.alfabank import *
 from pytest_voluptuous import S
 from alfabank.utils.sessions import alfabank
@@ -17,17 +19,21 @@ now_time = f"{now:{time_format}}"
 def test_display_rb():
     response = alfabank().get(f'/public/nationalRates',
                               params={'currencyCode': '840, 978'}
-                              )
-    assert response.status_code == 200
-    assert len(response.json()['rates']) != 0
-    assert S(exchange_rates_belarus) == response.json()
+                             )
+    with step('Check status code'):
+        assert response.status_code == 200
+    with step('Check !=0'):
+        assert len(response.json()['rates']) != 0
+    with step('Check response'):
+        assert S(exchange_rates_belarus) == response.json()
     # первый вложенный список
-    assert response.json()["rates"][0]["date"] == now_time
-    assert response.json()['rates'][0]['iso'] == "EUR"
-    assert response.json()['rates'][0]['code'] == 978
-    assert response.json()['rates'][0]['name'] == "евро"
+    with step('Check time'):
+        assert response.json()["rates"][0]["date"] == now_time
+        assert response.json()['rates'][0]['iso'] == "EUR"
+        assert response.json()['rates'][0]['code'] == 978
+        assert response.json()['rates'][0]['name'] == "евро"
     # второй вложенный список
-    assert response.json()["rates"][1]["date"] == now_time
-    assert response.json()['rates'][1]['iso'] == "USD"
-    assert response.json()['rates'][1]['code'] == 840
-    assert response.json()['rates'][1]['name'] == "доллар США"
+        assert response.json()["rates"][1]["date"] == now_time
+        assert response.json()['rates'][1]['iso'] == "USD"
+        assert response.json()['rates'][1]['code'] == 840
+        assert response.json()['rates'][1]['name'] == "доллар США"
