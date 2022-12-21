@@ -142,11 +142,5 @@ Example:
 
 </details>
 
-## :watermelon: Видео прохождения тестов
-К каждому тесту (в отчете) прилагается автоматически сгенерированное видео. Пример:
-<p align="center">
-  <img title="Selenoid Video" src="images/Video_bs2.gif" alt="Video" width="400">
-</p>
-
 -------
 2022-12-21
