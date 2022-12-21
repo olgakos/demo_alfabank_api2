@@ -3,7 +3,7 @@
 </p>
 
 ## Демо-проект по автоматизации тестирования API: alfabank.by
-:earth_americas: <a target="_blank" href="https://developerhub.alfabank.by/developerhub/site/pages/item-info.jag?name=partner.public&version=1.0.1&provider=admin&tab=doc">https://developerhub.alfabank.by</a>
+:earth_americas: <a target="_blank" href="https://developerhub.alfabank.by/developerhub/site/pages/item-info.jag?name=partner.public&version=1.0.1&provider=admin&tab=doc#get_/rates">https://developerhub.alfabank.by</a>
 <br>Исследуемый `api` взят из публичного источника. 
 <br>Cервис позволяет получать:
 - актуальные курсы валют Альфа-Банка 
@@ -37,7 +37,8 @@
 <details>
     <summary><i>Details</i></summary>
 	
-При конвертация валюты проверяется соответствие следующих данных. Параметры могут меняться при смене даты.
+При конвертация валюты проверяется соответствие следующих данных. <i>Параметры могут меняться при смене даты</i>.
+<br>
 <img src="images/rates20221221.jpg">
 
 При конвертации Российской валюты проверяется соответствие:
@@ -77,7 +78,7 @@
 
 <details>
     <summary><i>Details</i></summary>
-Проверяется соответствие начений ожидаемым:	
+Проверяется соответствие значений ожидаемым:	
 
 ```
 ['totalRowCount'] == 1
