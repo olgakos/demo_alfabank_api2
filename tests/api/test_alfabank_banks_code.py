@@ -1,6 +1,8 @@
 import os
 
 import requests
+from allure_commons._allure import step
+
 from schemas.alfabank import *
 from pytest_voluptuous import S
 from alfabank.utils.sessions import alfabank
@@ -18,6 +20,9 @@ def test_display_bank_codes():
         f'/public/banks',
         params=params
     )
-    assert response.status_code == 200
-    assert S(code_banks) == response.json()
-    assert response.json()["banks"][0]["bic"] == bic_name
+    with step('Check status code'):
+        assert response.status_code == 200
+    with step('Check response'):
+        assert S(code_banks) == response.json()
+    with step('Check data'):
+        assert response.json()["banks"][0]["bic"] == bic_name

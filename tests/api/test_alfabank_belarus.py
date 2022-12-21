@@ -26,14 +26,15 @@ def test_display_rb():
         assert len(response.json()['rates']) != 0
     with step('Check response'):
         assert S(exchange_rates_belarus) == response.json()
-    # первый вложенный список
-    with step('Check time'):
+    with step('Check time1'):
         assert response.json()["rates"][0]["date"] == now_time
+    with step('Check First data'):
         assert response.json()['rates'][0]['iso'] == "EUR"
         assert response.json()['rates'][0]['code'] == 978
         assert response.json()['rates'][0]['name'] == "евро"
-    # второй вложенный список
+    with step('Check time2'):
         assert response.json()["rates"][1]["date"] == now_time
+    with step('Check Second data'):
         assert response.json()['rates'][1]['iso'] == "USD"
         assert response.json()['rates'][1]['code'] == 840
         assert response.json()['rates'][1]['name'] == "доллар США"
