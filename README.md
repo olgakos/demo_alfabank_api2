@@ -95,7 +95,7 @@
 1. <i>Не зарегистрированным</i> пользователем перейти на страницу сборки проекта по ссылке: 
 <a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/">Jenkins project</a>
 2. Kликнуть на желтую иконку "Allure Report" и ознакомиться в графическим отчетом о результатах последнего запуска тестов. 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/9/allure/#suites">Пример</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_alfabank_api_test/9/allure/#suites/e6381a485aa9b70d27e6cad327b297d1/e38065b091afbcc3/">Пример</a>
     
 <p align="center">
 <img title="Allure Graphics" src="images/jenkins_see_allure.jpg" alt="jenkins_see_allure" width="600">
